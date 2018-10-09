@@ -1,0 +1,17 @@
+---
+  detailedErrors: true
+  accept:
+    - application/json
+  server:
+    uri: localhost:3000
+  routes:
+    controllerRootUrl: '/api'
+  logging:
+    raygun:
+      enabled: false
+    stdout:
+      enabled: false
+      level: debug
+  cacheTTL: 600
+  port: 3333
+  env: dev

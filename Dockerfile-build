@@ -1,0 +1,14 @@
+FROM kaptest/docker-atomapi-node
+MAINTAINER Atom Api Team<atomapi@kaplan.com>
+
+RUN npm install -g gulp --loglevel warn
+
+COPY package.json /usr/src/atom/package.json
+WORKDIR /usr/src/atom
+RUN npm install --loglevel warn
+
+# Deploy app
+COPY . /usr/src/atom
+
+# Run tests!
+CMD bash -c "npm run teamcity && npm run apidoc"

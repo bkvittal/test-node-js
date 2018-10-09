@@ -1,0 +1,33 @@
+rules:
+  comma-dangle: [2, "never"]
+  id-length: [2, {exceptions: ["_","$"]}]
+  strict: [2, "global"]
+  quotes: [2, "single"]
+  no-param-reassign: [2, {props: false}]
+  curly: [2, "all"]
+  operator-linebreak: [2, "after"]
+  camelcase: [2, {properties: "never"}]
+  max-len: [2, 100]
+  indent: [2, 2, {SwitchCase: 1}]
+  no-mixed-spaces-and-tabs: 2
+  no-trailing-spaces: 2
+  space-unary-ops: [2, {nonwords: false, overrides: {}}]
+  keyword-spacing: [2, {}]
+  space-infix-ops: 2
+  space-before-blocks: [2, "always"]
+  eol-last: 2
+  array-bracket-spacing: 0
+  space-in-parens: [2, "never"]
+  no-multiple-empty-lines: 2
+  wrap-iife: 2
+  no-restricted-syntax: 0
+  class-methods-use-this: [0]
+  no-plusplus: [0]
+extends: "airbnb/legacy"
+ecmaFeatures:
+  arrowFunctions: true
+  generators: true
+  blockBindings: true
+env:
+  node: true
+  es6: true

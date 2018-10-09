@@ -1,0 +1,10 @@
+---
+  detailedErrors: false
+  logging:
+    raygun:
+      enabled: true
+      key: gimme a key!
+    stdout:
+      enabled: true
+      level: info
+  env: production
